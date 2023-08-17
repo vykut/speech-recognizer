@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var viewModel: ViewModel
+    @Environment(\.openURL) var openURL
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            switch viewModel.state {
+                case .checkingForPermissions:
+                    Text("Checking permissions")
+                case .permissionsDenied:
+                    Button("Grant permissions") {
+                        if let url = URL(string: UIApplication.openSettingsURLString) {
+                            openURL(url)
+                        }
+                    }
+                case .listeningForCommands:
+                    CommandsSpeechView()
+            }
         }
-        .padding()
+        .task {
+            await viewModel.checkForPermissions()
+        }
     }
 }
 
