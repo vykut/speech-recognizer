@@ -11,6 +11,17 @@
 		ECC8A8E52A8B5FB500321390 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A8E42A8B5FB500321390 /* ContentView.swift */; };
 		ECC8A8E72A8B5FB600321390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC8A8E62A8B5FB600321390 /* Assets.xcassets */; };
 		ECC8A8EA2A8B5FB600321390 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC8A8E92A8B5FB600321390 /* Preview Assets.xcassets */; };
+		ECC8A8F12A8B639B00321390 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A8F02A8B639B00321390 /* Command.swift */; };
+		ECC8A8F32A8B642F00321390 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A8F22A8B642F00321390 /* SpeechRecognizer.swift */; };
+		ECC8A8F52A8B6D2D00321390 /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A8F42A8B6D2D00321390 /* Commands.swift */; };
+		ECC8A8F72A8B6F9A00321390 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A8F62A8B6F9A00321390 /* ViewModel.swift */; };
+		ECC8A8F92A8B758700321390 /* CommandsSpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A8F82A8B758700321390 /* CommandsSpeechView.swift */; };
+		ECC8A8FB2A8B79A400321390 /* CommandParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A8FA2A8B79A400321390 /* CommandParser.swift */; };
+		ECC8A8FD2A8B805B00321390 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A8FC2A8B805B00321390 /* Defaults.swift */; };
+		ECC8A9002A8B883100321390 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = ECC8A8FF2A8B883100321390 /* AsyncAlgorithms */; };
+		ECC8A9022A8E11F700321390 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A9012A8E11F700321390 /* SettingsView.swift */; };
+		ECC8A9042A8E149000321390 /* RawInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A9032A8E149000321390 /* RawInputView.swift */; };
+		ECC8A9062A8E14F500321390 /* CommandsInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8A9052A8E14F500321390 /* CommandsInterpreter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +30,16 @@
 		ECC8A8E42A8B5FB500321390 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ECC8A8E62A8B5FB600321390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECC8A8E92A8B5FB600321390 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ECC8A8F02A8B639B00321390 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		ECC8A8F22A8B642F00321390 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		ECC8A8F42A8B6D2D00321390 /* Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
+		ECC8A8F62A8B6F9A00321390 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		ECC8A8F82A8B758700321390 /* CommandsSpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsSpeechView.swift; sourceTree = "<group>"; };
+		ECC8A8FA2A8B79A400321390 /* CommandParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandParser.swift; sourceTree = "<group>"; };
+		ECC8A8FC2A8B805B00321390 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		ECC8A9012A8E11F700321390 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		ECC8A9032A8E149000321390 /* RawInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawInputView.swift; sourceTree = "<group>"; };
+		ECC8A9052A8E14F500321390 /* CommandsInterpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsInterpreter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC8A9002A8B883100321390 /* AsyncAlgorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +75,18 @@
 			children = (
 				ECC8A8E22A8B5FB500321390 /* VoiceCommandsApp.swift */,
 				ECC8A8E42A8B5FB500321390 /* ContentView.swift */,
+				ECC8A8F82A8B758700321390 /* CommandsSpeechView.swift */,
+				ECC8A9032A8E149000321390 /* RawInputView.swift */,
+				ECC8A9012A8E11F700321390 /* SettingsView.swift */,
+				ECC8A8F02A8B639B00321390 /* Command.swift */,
+				ECC8A8FC2A8B805B00321390 /* Defaults.swift */,
+				ECC8A8F22A8B642F00321390 /* SpeechRecognizer.swift */,
+				ECC8A8FA2A8B79A400321390 /* CommandParser.swift */,
 				ECC8A8E62A8B5FB600321390 /* Assets.xcassets */,
 				ECC8A8E82A8B5FB600321390 /* Preview Content */,
+				ECC8A8F42A8B6D2D00321390 /* Commands.swift */,
+				ECC8A8F62A8B6F9A00321390 /* ViewModel.swift */,
+				ECC8A9052A8E14F500321390 /* CommandsInterpreter.swift */,
 			);
 			path = VoiceCommands;
 			sourceTree = "<group>";
@@ -83,6 +115,9 @@
 			dependencies = (
 			);
 			name = VoiceCommands;
+			packageProductDependencies = (
+				ECC8A8FF2A8B883100321390 /* AsyncAlgorithms */,
+			);
 			productName = VoiceCommands;
 			productReference = ECC8A8DF2A8B5FB500321390 /* VoiceCommands.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +146,9 @@
 				Base,
 			);
 			mainGroup = ECC8A8D62A8B5FB500321390;
+			packageReferences = (
+				ECC8A8FE2A8B883100321390 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
+			);
 			productRefGroup = ECC8A8E02A8B5FB500321390 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +175,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC8A8FD2A8B805B00321390 /* Defaults.swift in Sources */,
 				ECC8A8E52A8B5FB500321390 /* ContentView.swift in Sources */,
+				ECC8A8F32A8B642F00321390 /* SpeechRecognizer.swift in Sources */,
+				ECC8A8FB2A8B79A400321390 /* CommandParser.swift in Sources */,
 				ECC8A8E32A8B5FB500321390 /* VoiceCommandsApp.swift in Sources */,
+				ECC8A9022A8E11F700321390 /* SettingsView.swift in Sources */,
+				ECC8A9062A8E14F500321390 /* CommandsInterpreter.swift in Sources */,
+				ECC8A8F52A8B6D2D00321390 /* Commands.swift in Sources */,
+				ECC8A8F92A8B758700321390 /* CommandsSpeechView.swift in Sources */,
+				ECC8A8F72A8B6F9A00321390 /* ViewModel.swift in Sources */,
+				ECC8A9042A8E149000321390 /* RawInputView.swift in Sources */,
+				ECC8A8F12A8B639B00321390 /* Command.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,11 +312,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VoiceCommands/Preview Content\"";
+				DEVELOPMENT_TEAM = S587A4HQ4C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded for the purpose of issuing commands. Audio recordings are discarded after commands are recognized.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can issue commands using your voice.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -281,6 +333,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorsocaciu.VoiceCommands;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -292,11 +345,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VoiceCommands/Preview Content\"";
+				DEVELOPMENT_TEAM = S587A4HQ4C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded for the purpose of issuing commands. Audio recordings are discarded after commands are recognized.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can issue commands using your voice.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,6 +366,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorsocaciu.VoiceCommands;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -337,6 +395,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECC8A8FE2A8B883100321390 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECC8A8FF2A8B883100321390 /* AsyncAlgorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECC8A8FE2A8B883100321390 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECC8A8D72A8B5FB500321390 /* Project object */;
 }

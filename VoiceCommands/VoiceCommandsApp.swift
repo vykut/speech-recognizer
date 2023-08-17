@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct VoiceCommandsApp: App {
+    @StateObject var viewModel = ViewModel()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(viewModel)
         }
     }
 }
